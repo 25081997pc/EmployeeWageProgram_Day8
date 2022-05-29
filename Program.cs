@@ -6,9 +6,11 @@
         {
             Console.WriteLine("Welcome to the Employee Wage Computation Program");
 
-            EmployeeCheck employee = new EmployeeCheck();
-            employee.CheckEmployeePresentOrNot();
+            //EmployeeCheck employee = new EmployeeCheck();
+            //employee.CheckEmployeePresentOrNot();
 
+            EmployeeWage employeeWage = new EmployeeWage(20);
+            employeeWage.CalculateEmployeeWage();
         }
     }
 }
