@@ -18,8 +18,11 @@
             //SwitchCase switchCase = new SwitchCase(20);
             //switchCase.UseSwitchCaseStatement();
 
-            EmpWorkingDay empWorking = new EmpWorkingDay(20, 20);
-            empWorking.CalWagesForMonthWorkingDays();
+            //EmpWorkingDay empWorking = new EmpWorkingDay(20, 20);
+            //empWorking.CalWagesForMonthWorkingDays();
+
+            EmployeeMaxHrs employeeMax = new EmployeeMaxHrs(20, 20, 100);
+            employeeMax.CalEmpWageForConditionOfHrsAndMaxdays();
 
         }
     }
