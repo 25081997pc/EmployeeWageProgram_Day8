@@ -15,8 +15,12 @@
             //EmployeeAddPartWage employeeAddPart = new EmployeeAddPartWage(20);
             //employeeAddPart.CalculateAddPartTimeEmpWage();
 
-            SwitchCase switchCase = new SwitchCase(20);
-            switchCase.UseSwitchCaseStatement();
+            //SwitchCase switchCase = new SwitchCase(20);
+            //switchCase.UseSwitchCaseStatement();
+
+            EmpWorkingDay empWorking = new EmpWorkingDay(20, 20);
+            empWorking.CalWagesForMonthWorkingDays();
+
         }
     }
 }
