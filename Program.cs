@@ -9,8 +9,11 @@
             //EmployeeCheck employee = new EmployeeCheck();
             //employee.CheckEmployeePresentOrNot();
 
-            EmployeeWage employeeWage = new EmployeeWage(20);
-            employeeWage.CalculateEmployeeWage();
+            //EmployeeWage employeeWage = new EmployeeWage(20);
+            //employeeWage.CalculateEmployeeWage();
+
+            EmployeeAddPartWage employeeAddPart = new EmployeeAddPartWage(20);
+            employeeAddPart.CalculateAddPartTimeEmpWage();
         }
     }
 }
