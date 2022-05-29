@@ -12,8 +12,11 @@
             //EmployeeWage employeeWage = new EmployeeWage(20);
             //employeeWage.CalculateEmployeeWage();
 
-            EmployeeAddPartWage employeeAddPart = new EmployeeAddPartWage(20);
-            employeeAddPart.CalculateAddPartTimeEmpWage();
+            //EmployeeAddPartWage employeeAddPart = new EmployeeAddPartWage(20);
+            //employeeAddPart.CalculateAddPartTimeEmpWage();
+
+            SwitchCase switchCase = new SwitchCase(20);
+            switchCase.UseSwitchCaseStatement();
         }
     }
 }
