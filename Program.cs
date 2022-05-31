@@ -31,17 +31,25 @@
             //EmpWage TATA = new EmpWage(26, 125, 35, "TATA");
 
             //EmpWageBuildArray empWageBuildArray = new EmpWageBuildArray();
-            //empWageBuildArray.addCompanyEmpWage("DMart", 20, 20, 100);
-            //empWageBuildArray.addCompanyEmpWage("Reliance", 18, 24, 120);
+            //empWageBuildArray.addCompanyEmpWage("DMart", 20, 2, 100);
+            //empWageBuildArray.addCompanyEmpWage("Reliance", 18, 4, 120);
             //empWageBuildArray.computeEmpWage();
 
-            EmpWageBuilderobject DMart = new EmpWageBuilderobject("DMart", 20, 2, 10);
-            EmpWageBuilderobject Relaince = new EmpWageBuilderobject("Relaince", 10, 4, 20);
-            DMart.computeEmpWage();
-            Console.WriteLine(DMart.toString());
-            Relaince.computeEmpWage();
-            Console.WriteLine(Relaince.toString());
+            //EmpWageBuilderobject DMart = new EmpWageBuilderobject("DMart", 20, 2, 10);
+            //EmpWageBuilderobject Relaince = new EmpWageBuilderobject("Relaince", 10, 4, 20);
+            //DMart.computeEmpWage();
+            //Console.WriteLine(DMart.toString());
+            //Relaince.computeEmpWage();
+            //Console.WriteLine(Relaince.toString());
 
+            EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+            empWageBuilder.addCompanyEmpWage("DMart", 20, 20, 100);
+            empWageBuilder.addCompanyEmpWage("Reliance", 18, 24, 120);
+            empWageBuilder.computeEmpWage();
+            Console.WriteLine("Total Wage for DMart company : " + empWageBuilder.getTotalWage("DMart"));
+            Console.WriteLine("Total Wage for Reliance company : " + empWageBuilder.getTotalWage("Reliance"));
+
+          
         }
     }
 }
