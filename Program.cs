@@ -30,11 +30,18 @@
             //EmpWage BAJAJ = new EmpWage(24, 100, 25, "BAJAJ");
             //EmpWage TATA = new EmpWage(26, 125, 35, "TATA");
 
-            EmpWageBuildArray empWageBuildArray = new EmpWageBuildArray();
-            empWageBuildArray.addCompanyEmpWage("DMart", 20, 20, 100);
-            empWageBuildArray.addCompanyEmpWage("Reliance", 18, 24, 120);
-            empWageBuildArray.computeEmpWage();
-    
+            //EmpWageBuildArray empWageBuildArray = new EmpWageBuildArray();
+            //empWageBuildArray.addCompanyEmpWage("DMart", 20, 20, 100);
+            //empWageBuildArray.addCompanyEmpWage("Reliance", 18, 24, 120);
+            //empWageBuildArray.computeEmpWage();
+
+            EmpWageBuilderobject DMart = new EmpWageBuilderobject("DMart", 20, 2, 10);
+            EmpWageBuilderobject Relaince = new EmpWageBuilderobject("Relaince", 10, 4, 20);
+            DMart.computeEmpWage();
+            Console.WriteLine(DMart.toString());
+            Relaince.computeEmpWage();
+            Console.WriteLine(Relaince.toString());
+
         }
     }
 }
