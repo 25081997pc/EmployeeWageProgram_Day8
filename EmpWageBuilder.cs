@@ -12,11 +12,12 @@ namespace EmployeeWageProgramDay8
         public const int IS_PART_TIME = 2;
 
         private LinkedList<CompanyEmpWage> companyEmpWageList;
-        private string CompanyName;
+        private string Company;
        
         public EmpWageBuilder()
         {
             this.companyEmpWageList = new LinkedList<CompanyEmpWage>();
+
 
         }
         public void addCompanyEmpWage(string company, int empRatePerHr, int NumofWorkingDays, int MaxHrsPerMonth)
