@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageProgramDay8
 {
-    public class EmpWageBuilder : IComputeEmpWage
+    public class EmpWageBuilder: IComputeEmpWage
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
 
         private LinkedList<CompanyEmpWage> companyEmpWageList;
-        private string Company;
-       
+        private Dictionary<string, CompanyEmpWage> companyEmpWageMap;
+
         public EmpWageBuilder()
         {
             this.companyEmpWageList = new LinkedList<CompanyEmpWage>();
-
+            this.companyEmpWageMap = new Dictionary<string, CompanyEmpWage>();
 
         }
         public void addCompanyEmpWage(string company, int empRatePerHr, int NumofWorkingDays, int MaxHrsPerMonth)
         {
             CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, empRatePerHr, NumofWorkingDays, MaxHrsPerMonth);
             this.companyEmpWageList.AddLast(companyEmpWage);
+            this.companyEmpWageMap.Add(company, companyEmpWage);
            
         }
         public void computeEmpWage()
@@ -55,11 +56,16 @@ namespace EmployeeWageProgramDay8
                         empHrs = 0;
                         break;
                 }
+                int dailyWage = empHrs * companyEmpWage.empRatePerHr;
                 totalEmpHrs += empHrs;
-                Console.WriteLine("Day# : " + totalWorkingDays + " Emp Hrs: " + empHrs);
+                Console.WriteLine("Day# : " + totalWorkingDays + " Emp Hrs: " + empHrs + " DailyWage : " + dailyWage);
             }
             return totalEmpHrs * companyEmpWage.empRatePerHr;
-        }           
+        }
+        public int getTotalWage(string company)
+        {
+            return this.companyEmpWageMap[company].totalEmpWage;
+        }
 
     }
 }
