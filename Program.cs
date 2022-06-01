@@ -52,6 +52,7 @@
             IComputeEmpWage empWageBuilder = new EmpWageBuilder();
             empWageBuilder.addCompanyEmpWage("DMart", 20, 20, 100);
             empWageBuilder.addCompanyEmpWage("Reliance", 18, 24, 120);
+            empWageBuilder.addCompanyEmpWage("Dell", 25, 26, 150);
             empWageBuilder.computeEmpWage();
         }
     }
