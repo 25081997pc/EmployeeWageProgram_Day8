@@ -30,6 +30,7 @@ namespace EmployeeWageProgramDay8
         }
         public void setTotalEmpWage(int totalEmpWage)
         {
+
             this.totalEmpWage = totalEmpWage;
 
         }
