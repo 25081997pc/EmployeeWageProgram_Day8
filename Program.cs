@@ -54,6 +54,10 @@
             empWageBuilder.addCompanyEmpWage("Reliance", 18, 24, 120);
             empWageBuilder.addCompanyEmpWage("Dell", 25, 26, 150);
             empWageBuilder.computeEmpWage();
+            Console.WriteLine("Total Wage for DMart company : " + empWageBuilder.getTotalWage("DMart"));
+            Console.WriteLine("Total Wage for Reliance company : " + empWageBuilder.getTotalWage("Reliance"));
+            Console.WriteLine("Total Wage for Dell company : " + empWageBuilder.getTotalWage("Dell"));
+            
         }
     }
 }
