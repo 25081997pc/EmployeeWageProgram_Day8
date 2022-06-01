@@ -42,14 +42,17 @@
             //Relaince.computeEmpWage();
             //Console.WriteLine(Relaince.toString());
 
-            EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+            //EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+            //empWageBuilder.addCompanyEmpWage("DMart", 20, 20, 100);
+            //empWageBuilder.addCompanyEmpWage("Reliance", 18, 24, 120);
+            //empWageBuilder.computeEmpWage();
+            //Console.WriteLine("Total Wage for DMart company : " + empWageBuilder.getTotalWage("DMart"));
+            //Console.WriteLine("Total Wage for Reliance company : " + empWageBuilder.getTotalWage("Reliance"));
+
+            IComputeEmpWage empWageBuilder = new EmpWageBuilder();
             empWageBuilder.addCompanyEmpWage("DMart", 20, 20, 100);
             empWageBuilder.addCompanyEmpWage("Reliance", 18, 24, 120);
             empWageBuilder.computeEmpWage();
-            Console.WriteLine("Total Wage for DMart company : " + empWageBuilder.getTotalWage("DMart"));
-            Console.WriteLine("Total Wage for Reliance company : " + empWageBuilder.getTotalWage("Reliance"));
-
-          
         }
     }
 }
